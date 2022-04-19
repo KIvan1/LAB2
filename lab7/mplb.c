@@ -7,7 +7,7 @@ void mplb(text txt)
 {
     if (txt->cursor->line == txt->begin)
     {
-        printf("Cursor in first line\n");
+        txt->cursor->position = 0;
         return;
     }
 
