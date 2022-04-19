@@ -100,7 +100,9 @@ TEST(mplb, sute3)
 
 TEST(prev_pos, suite1)
 {
-
+    text txt = create_text();
+    load(txt, "input.txt");
+    prev_paste(txt, "test");
 }
 
 #endif // EQTEST_H
