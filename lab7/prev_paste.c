@@ -35,6 +35,6 @@ void prev_paste(text txt, const char *str_for_input)
     {
         txt->begin = nd;
     }
-    printf("%s\n", txt->cursor->line->previous->next->contents);
+    //printf("%s\n", txt->cursor->line->previous->next->contents);
     txt->length++;
 }

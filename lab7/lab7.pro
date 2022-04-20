@@ -22,9 +22,6 @@ HEADERS += \
     text/text.h
 
 
-DISTFILES += \
-    input/input.txt
-
 QMAKE_CFLAGS += -Wall -Wextra #-Werror
 
 # gcov

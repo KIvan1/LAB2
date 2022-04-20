@@ -36,5 +36,5 @@ SOURCES += main.cpp \
 
 INCLUDEPATH += ../lab7
 
-#DISTFILES += \
-#    input/input.txt
+DISTFILES += \
+    input/input.txt

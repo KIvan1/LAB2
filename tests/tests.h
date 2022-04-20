@@ -99,11 +99,28 @@ TEST(mplb, sute3)
     EXPECT_EQ(output, "There are already no any lines in the text!\n");
 }
 
-TEST(prev_pos, suite1)
+TEST(prev_paste, suite1)
 {
     text txt = create_text();
     load(txt, filename);
+    char s[MAXLINE + 1];
+    for (int i = 0; i < MAXLINE + 1; i++)
+    {
+        s[i] = 't';
+    }
+    testing::internal::CaptureStderr();
+    prev_paste(txt, s);
+    std::string output = testing::internal::GetCapturedStderr();
+    EXPECT_EQ(output, "Too long line!\n");
+}
+
+TEST(prev_paste, suite2)
+{
+    text txt = create_text();
+    load(txt, filename);
+    int prevSize = txt->length;
     prev_paste(txt, "test");
+    EXPECT_EQ(txt->length - 1, prevSize);
 }
 
 #endif // EQTEST_H
