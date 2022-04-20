@@ -3,7 +3,7 @@
     "arguments": [
         "clang",
         "-I",
-        "/tmp/QtCreator-erllqY/clang-uiheader-lrBRoY",
+        "/tmp/QtCreator-xXFbjn/clang-uiheader-OyxClo",
         "-nostdinc",
         "-nostdinc++",
         "-pipe",
@@ -51,7 +51,7 @@
     "arguments": [
         "clang",
         "-I",
-        "/tmp/QtCreator-erllqY/clang-uiheader-lrBRoY",
+        "/tmp/QtCreator-xXFbjn/clang-uiheader-OyxClo",
         "-nostdinc",
         "-nostdinc++",
         "-pipe",
@@ -99,7 +99,7 @@
     "arguments": [
         "clang",
         "-I",
-        "/tmp/QtCreator-erllqY/clang-uiheader-lrBRoY",
+        "/tmp/QtCreator-xXFbjn/clang-uiheader-OyxClo",
         "-nostdinc",
         "-nostdinc++",
         "-pipe",
@@ -147,7 +147,7 @@
     "arguments": [
         "clang",
         "-I",
-        "/tmp/QtCreator-erllqY/clang-uiheader-lrBRoY",
+        "/tmp/QtCreator-xXFbjn/clang-uiheader-OyxClo",
         "-nostdinc",
         "-nostdinc++",
         "-pipe",
@@ -195,7 +195,7 @@
     "arguments": [
         "clang",
         "-I",
-        "/tmp/QtCreator-erllqY/clang-uiheader-lrBRoY",
+        "/tmp/QtCreator-xXFbjn/clang-uiheader-OyxClo",
         "-nostdinc",
         "-nostdinc++",
         "-pipe",
@@ -243,7 +243,7 @@
     "arguments": [
         "clang",
         "-I",
-        "/tmp/QtCreator-erllqY/clang-uiheader-lrBRoY",
+        "/tmp/QtCreator-xXFbjn/clang-uiheader-OyxClo",
         "-nostdinc",
         "-nostdinc++",
         "-pipe",
@@ -291,7 +291,7 @@
     "arguments": [
         "clang",
         "-I",
-        "/tmp/QtCreator-erllqY/clang-uiheader-lrBRoY",
+        "/tmp/QtCreator-xXFbjn/clang-uiheader-OyxClo",
         "-nostdinc",
         "-nostdinc++",
         "-pipe",
@@ -339,7 +339,7 @@
     "arguments": [
         "clang",
         "-I",
-        "/tmp/QtCreator-erllqY/clang-uiheader-lrBRoY",
+        "/tmp/QtCreator-xXFbjn/clang-uiheader-OyxClo",
         "-nostdinc",
         "-nostdinc++",
         "-pipe",
@@ -387,7 +387,7 @@
     "arguments": [
         "clang",
         "-I",
-        "/tmp/QtCreator-erllqY/clang-uiheader-lrBRoY",
+        "/tmp/QtCreator-xXFbjn/clang-uiheader-OyxClo",
         "-nostdinc",
         "-nostdinc++",
         "-pipe",
@@ -435,7 +435,7 @@
     "arguments": [
         "clang",
         "-I",
-        "/tmp/QtCreator-erllqY/clang-uiheader-lrBRoY",
+        "/tmp/QtCreator-xXFbjn/clang-uiheader-OyxClo",
         "-nostdinc",
         "-nostdinc++",
         "-pipe",
@@ -483,7 +483,7 @@
     "arguments": [
         "clang",
         "-I",
-        "/tmp/QtCreator-erllqY/clang-uiheader-lrBRoY",
+        "/tmp/QtCreator-xXFbjn/clang-uiheader-OyxClo",
         "-nostdinc",
         "-nostdinc++",
         "-pipe",
@@ -531,7 +531,7 @@
     "arguments": [
         "clang",
         "-I",
-        "/tmp/QtCreator-erllqY/clang-uiheader-lrBRoY",
+        "/tmp/QtCreator-xXFbjn/clang-uiheader-OyxClo",
         "-nostdinc",
         "-nostdinc++",
         "-pipe",
@@ -579,7 +579,7 @@
     "arguments": [
         "clang",
         "-I",
-        "/tmp/QtCreator-erllqY/clang-uiheader-lrBRoY",
+        "/tmp/QtCreator-xXFbjn/clang-uiheader-OyxClo",
         "-nostdinc",
         "-nostdinc++",
         "-pipe",
@@ -627,7 +627,7 @@
     "arguments": [
         "clang",
         "-I",
-        "/tmp/QtCreator-erllqY/clang-uiheader-lrBRoY",
+        "/tmp/QtCreator-xXFbjn/clang-uiheader-OyxClo",
         "-nostdinc",
         "-nostdinc++",
         "-pipe",
@@ -675,7 +675,7 @@
     "arguments": [
         "clang",
         "-I",
-        "/tmp/QtCreator-erllqY/clang-uiheader-lrBRoY",
+        "/tmp/QtCreator-xXFbjn/clang-uiheader-OyxClo",
         "-nostdinc",
         "-nostdinc++",
         "-pipe",
@@ -742,7 +742,7 @@
     "arguments": [
         "clang",
         "-I",
-        "/tmp/QtCreator-erllqY/clang-uiheader-lrBRoY",
+        "/tmp/QtCreator-xXFbjn/clang-uiheader-OyxClo",
         "-nostdinc",
         "-nostdinc++",
         "-pipe",
@@ -809,7 +809,7 @@
     "arguments": [
         "clang",
         "-I",
-        "/tmp/QtCreator-erllqY/clang-uiheader-lrBRoY",
+        "/tmp/QtCreator-xXFbjn/clang-uiheader-OyxClo",
         "-nostdinc",
         "-nostdinc++",
         "-pipe",
@@ -876,7 +876,7 @@
     "arguments": [
         "clang",
         "-I",
-        "/tmp/QtCreator-erllqY/clang-uiheader-lrBRoY",
+        "/tmp/QtCreator-xXFbjn/clang-uiheader-OyxClo",
         "-nostdinc",
         "-nostdinc++",
         "-pipe",
@@ -943,7 +943,7 @@
     "arguments": [
         "clang",
         "-I",
-        "/tmp/QtCreator-erllqY/clang-uiheader-lrBRoY",
+        "/tmp/QtCreator-xXFbjn/clang-uiheader-OyxClo",
         "-nostdinc",
         "-nostdinc++",
         "-pipe",
@@ -1010,7 +1010,7 @@
     "arguments": [
         "clang",
         "-I",
-        "/tmp/QtCreator-erllqY/clang-uiheader-lrBRoY",
+        "/tmp/QtCreator-xXFbjn/clang-uiheader-OyxClo",
         "-nostdinc",
         "-nostdinc++",
         "-pipe",
@@ -1077,7 +1077,7 @@
     "arguments": [
         "clang",
         "-I",
-        "/tmp/QtCreator-erllqY/clang-uiheader-lrBRoY",
+        "/tmp/QtCreator-xXFbjn/clang-uiheader-OyxClo",
         "-nostdinc",
         "-nostdinc++",
         "-pipe",
@@ -1144,7 +1144,7 @@
     "arguments": [
         "clang",
         "-I",
-        "/tmp/QtCreator-erllqY/clang-uiheader-lrBRoY",
+        "/tmp/QtCreator-xXFbjn/clang-uiheader-OyxClo",
         "-nostdinc",
         "-nostdinc++",
         "-pipe",
@@ -1204,7 +1204,7 @@
     "arguments": [
         "clang",
         "-I",
-        "/tmp/QtCreator-erllqY/clang-uiheader-lrBRoY",
+        "/tmp/QtCreator-xXFbjn/clang-uiheader-OyxClo",
         "-nostdinc",
         "-nostdinc++",
         "-pipe",
@@ -1264,7 +1264,7 @@
     "arguments": [
         "clang",
         "-I",
-        "/tmp/QtCreator-erllqY/clang-uiheader-lrBRoY",
+        "/tmp/QtCreator-xXFbjn/clang-uiheader-OyxClo",
         "-nostdinc",
         "-nostdinc++",
         "-pipe",
@@ -1324,7 +1324,7 @@
     "arguments": [
         "clang",
         "-I",
-        "/tmp/QtCreator-erllqY/clang-uiheader-lrBRoY",
+        "/tmp/QtCreator-xXFbjn/clang-uiheader-OyxClo",
         "-nostdinc",
         "-nostdinc++",
         "-pipe",
@@ -1384,7 +1384,7 @@
     "arguments": [
         "clang",
         "-I",
-        "/tmp/QtCreator-erllqY/clang-uiheader-lrBRoY",
+        "/tmp/QtCreator-xXFbjn/clang-uiheader-OyxClo",
         "-nostdinc",
         "-nostdinc++",
         "-pipe",
@@ -1444,7 +1444,7 @@
     "arguments": [
         "clang",
         "-I",
-        "/tmp/QtCreator-erllqY/clang-uiheader-lrBRoY",
+        "/tmp/QtCreator-xXFbjn/clang-uiheader-OyxClo",
         "-nostdinc",
         "-nostdinc++",
         "-pipe",
@@ -1504,7 +1504,7 @@
     "arguments": [
         "clang",
         "-I",
-        "/tmp/QtCreator-erllqY/clang-uiheader-lrBRoY",
+        "/tmp/QtCreator-xXFbjn/clang-uiheader-OyxClo",
         "-nostdinc",
         "-nostdinc++",
         "-pipe",
@@ -1564,7 +1564,7 @@
     "arguments": [
         "clang",
         "-I",
-        "/tmp/QtCreator-erllqY/clang-uiheader-lrBRoY",
+        "/tmp/QtCreator-xXFbjn/clang-uiheader-OyxClo",
         "-nostdinc",
         "-nostdinc++",
         "-pipe",
@@ -1624,7 +1624,7 @@
     "arguments": [
         "clang",
         "-I",
-        "/tmp/QtCreator-erllqY/clang-uiheader-lrBRoY",
+        "/tmp/QtCreator-xXFbjn/clang-uiheader-OyxClo",
         "-nostdinc",
         "-nostdinc++",
         "-pipe",
@@ -1684,7 +1684,7 @@
     "arguments": [
         "clang",
         "-I",
-        "/tmp/QtCreator-erllqY/clang-uiheader-lrBRoY",
+        "/tmp/QtCreator-xXFbjn/clang-uiheader-OyxClo",
         "-nostdinc",
         "-nostdinc++",
         "-pipe",
@@ -1744,7 +1744,7 @@
     "arguments": [
         "clang",
         "-I",
-        "/tmp/QtCreator-erllqY/clang-uiheader-lrBRoY",
+        "/tmp/QtCreator-xXFbjn/clang-uiheader-OyxClo",
         "-nostdinc",
         "-nostdinc++",
         "-pipe",
@@ -1804,7 +1804,7 @@
     "arguments": [
         "clang",
         "-I",
-        "/tmp/QtCreator-erllqY/clang-uiheader-lrBRoY",
+        "/tmp/QtCreator-xXFbjn/clang-uiheader-OyxClo",
         "-nostdinc",
         "-nostdinc++",
         "-pipe",
@@ -1864,7 +1864,7 @@
     "arguments": [
         "clang",
         "-I",
-        "/tmp/QtCreator-erllqY/clang-uiheader-lrBRoY",
+        "/tmp/QtCreator-xXFbjn/clang-uiheader-OyxClo",
         "-nostdinc",
         "-nostdinc++",
         "-pipe",
@@ -1924,7 +1924,7 @@
     "arguments": [
         "clang",
         "-I",
-        "/tmp/QtCreator-erllqY/clang-uiheader-lrBRoY",
+        "/tmp/QtCreator-xXFbjn/clang-uiheader-OyxClo",
         "-nostdinc",
         "-nostdinc++",
         "-pipe",

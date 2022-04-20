@@ -15,7 +15,7 @@ extern "C"{
 TEST(cursor_pos, sute1)
 {
     text txt = create_text();
-    load(txt, "input.txt");
+    load(txt, "input/input.txt");
     move_cursor(txt, 2, 3);
     EXPECT_EQ(txt->cursor->position, 3);
     int k = 1;
@@ -33,7 +33,7 @@ TEST(cursor_pos, sute1)
 TEST(cursor_pos, sute2)
 {
     text txt = create_text();
-    load(txt, "input.txt");
+    load(txt, "input/input.txt");
     move_cursor(txt, -3, 0);
     EXPECT_EQ(txt->cursor->position, 0);
     int k = 1;
@@ -51,7 +51,7 @@ TEST(cursor_pos, sute2)
 TEST(cursor_pos, sute3)
 {
     text txt = create_text();
-    load(txt, "input.txt");
+    load(txt, "input/input.txt");
     move_cursor(txt, 15, 0);
     EXPECT_EQ(txt->cursor->position, 0);
     int k = 1;
@@ -69,7 +69,7 @@ TEST(cursor_pos, sute3)
 TEST(mplb, sute1)
 {
     text txt = create_text();
-    load(txt, "input.txt");
+    load(txt, "input/input.txt");
     node *prev = txt->cursor->line;
     mplb(txt);
     EXPECT_EQ(txt->cursor->position, 0);
@@ -79,7 +79,7 @@ TEST(mplb, sute1)
 TEST(mplb, sute2)
 {
     text txt = create_text();
-    load(txt, "input.txt");
+    load(txt, "input/input.txt");
     txt->cursor->line = txt->begin;
     node *prev = txt->cursor->line;
     mplb(txt);
@@ -101,7 +101,7 @@ TEST(mplb, sute3)
 TEST(prev_pos, suite1)
 {
     text txt = create_text();
-    load(txt, "input.txt");
+    load(txt, "input/input.txt");
     prev_paste(txt, "test");
 }
 
