@@ -22,11 +22,11 @@ HEADERS += \
     text/text.h
 
 
+DISTFILES += \
+    input/input.txt
+
 QMAKE_CFLAGS += -Wall -Wextra #-Werror
 
 # gcov
 QMAKE_CFLAGS += -fprofile-arcs -ftest-coverage
 LIBS += -lgcov
-
-DISTFILES += \
-    input/input.txt
