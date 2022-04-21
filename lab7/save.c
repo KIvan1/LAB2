@@ -15,7 +15,7 @@ void save(text txt, char *filename)
 
 	if ((f = fopen(filename, "w")) == NULL)
 	{
-		printf("File %s can't be opened\n", filename);
+        fprintf(stderr, "File %s can't be opened\n", filename);
 		return;
 	}
 

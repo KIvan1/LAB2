@@ -19,7 +19,8 @@ DEFINES += INPUTDIR=\\\"$$PWD/input/\\\"
 HEADERS += tests.h \
         ../lab7/common.h \
         ../lab7/text/text.h \
-        ../lab7/text/_text.h
+        ../lab7/text/_text.h \
+        tests_out.h
 
 SOURCES += main.cpp \
     ../lab7/move_cursor.c \

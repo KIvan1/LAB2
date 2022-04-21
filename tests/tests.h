@@ -2,10 +2,10 @@
 #define EQTEST_H
 #include <gtest/gtest.h>
 #include <gmock/gmock-matchers.h>
-#include<fstream>
-#include<string>
+#include <string>
+#include <fstream>
 
-char* filename = "./input/input.txt";
+char* filename = "input.txt";
 
 extern "C"{
 #include "text/text.h"
@@ -88,32 +88,6 @@ TEST(mplb, sute2)
     EXPECT_EQ(txt->cursor->line, prev);
 }
 
-TEST(mplb, sute3)
-{
-    text txt = create_text();
-    txt->cursor->line = txt->begin;
-    node *prev = txt->cursor->line;
-    testing::internal::CaptureStderr();
-    mplb(txt);
-    std::string output = testing::internal::GetCapturedStderr();
-    EXPECT_EQ(output, "There are already no any lines in the text!\n");
-}
-
-TEST(prev_paste, suite1)
-{
-    text txt = create_text();
-    load(txt, filename);
-    char s[MAXLINE + 1];
-    for (int i = 0; i < MAXLINE + 1; i++)
-    {
-        s[i] = 't';
-    }
-    testing::internal::CaptureStderr();
-    prev_paste(txt, s);
-    std::string output = testing::internal::GetCapturedStderr();
-    EXPECT_EQ(output, "Too long line!\n");
-}
-
 TEST(prev_paste, suite2)
 {
     text txt = create_text();
@@ -121,6 +95,36 @@ TEST(prev_paste, suite2)
     int prevSize = txt->length;
     prev_paste(txt, "test");
     EXPECT_EQ(txt->length - 1, prevSize);
+    EXPECT_STREQ(txt->cursor->line->previous->contents, "test");
+}
+
+TEST(prev_paste, suite3)
+{
+    text txt = create_text();
+    load(txt, filename);
+    int prevSize = txt->length;
+    move_cursor(txt, 1, 0);
+    prev_paste(txt, "test");
+    EXPECT_EQ(txt->length - 1, prevSize);
+    EXPECT_STREQ(txt->begin->contents, "test");
+}
+
+TEST(save, suite3)
+{
+    text txt = create_text();
+    load(txt, filename);
+    save(txt, "result.txt");
+    std::ifstream f;
+    f.open(filename);
+    std::ifstream cur_f;
+    cur_f.open("result.txt");
+    std::string s;
+    std::string cur_s;
+    while(std::getline(f, s) && std::getline(cur_f, cur_s))
+    {
+        EXPECT_EQ(s, cur_s);
+    }
+    EXPECT_TRUE(std::getline(f, s) || std::getline(cur_f, cur_s));
 }
 
 #endif // EQTEST_H
