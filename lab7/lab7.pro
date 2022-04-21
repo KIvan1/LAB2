@@ -8,10 +8,10 @@ SOURCES += editor.c \
     load.c \
     save.c \
     show.c \
-    text/append_line.c \
-    text/create_text.c \
-    text/process_forward.c \
-    text/remove_all.c \
+    append_line.c \
+    create_text.c \
+    process_forward.c \
+    remove_all.c \
     mplb.c \
     prev_paste.c
 

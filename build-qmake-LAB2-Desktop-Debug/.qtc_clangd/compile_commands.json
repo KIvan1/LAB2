@@ -282,10 +282,10 @@
         "-Wno-unknown-pragmas",
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
-        "/home/ivan/POtesting/LAB2/lab7/text/append_line.c"
+        "/home/ivan/POtesting/LAB2/lab7/append_line.c"
     ],
     "directory": "/home/ivan/POtesting/LAB2/build-qmake-LAB2-Desktop-Debug/.qtc_clangd",
-    "file": "/home/ivan/POtesting/LAB2/lab7/text/append_line.c"
+    "file": "/home/ivan/POtesting/LAB2/lab7/append_line.c"
 },
 {
     "arguments": [
@@ -330,10 +330,10 @@
         "-Wno-unknown-pragmas",
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
-        "/home/ivan/POtesting/LAB2/lab7/text/create_text.c"
+        "/home/ivan/POtesting/LAB2/lab7/create_text.c"
     ],
     "directory": "/home/ivan/POtesting/LAB2/build-qmake-LAB2-Desktop-Debug/.qtc_clangd",
-    "file": "/home/ivan/POtesting/LAB2/lab7/text/create_text.c"
+    "file": "/home/ivan/POtesting/LAB2/lab7/create_text.c"
 },
 {
     "arguments": [
@@ -378,10 +378,10 @@
         "-Wno-unknown-pragmas",
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
-        "/home/ivan/POtesting/LAB2/lab7/text/process_forward.c"
+        "/home/ivan/POtesting/LAB2/lab7/process_forward.c"
     ],
     "directory": "/home/ivan/POtesting/LAB2/build-qmake-LAB2-Desktop-Debug/.qtc_clangd",
-    "file": "/home/ivan/POtesting/LAB2/lab7/text/process_forward.c"
+    "file": "/home/ivan/POtesting/LAB2/lab7/process_forward.c"
 },
 {
     "arguments": [
@@ -426,10 +426,10 @@
         "-Wno-unknown-pragmas",
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
-        "/home/ivan/POtesting/LAB2/lab7/text/remove_all.c"
+        "/home/ivan/POtesting/LAB2/lab7/remove_all.c"
     ],
     "directory": "/home/ivan/POtesting/LAB2/build-qmake-LAB2-Desktop-Debug/.qtc_clangd",
-    "file": "/home/ivan/POtesting/LAB2/lab7/text/remove_all.c"
+    "file": "/home/ivan/POtesting/LAB2/lab7/remove_all.c"
 },
 {
     "arguments": [
@@ -1068,10 +1068,10 @@
         "-Wno-unknown-pragmas",
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
-        "/home/ivan/POtesting/LAB2/lab7/text/text.h"
+        "/home/ivan/POtesting/LAB2/lab7/text.h"
     ],
     "directory": "/home/ivan/POtesting/LAB2/build-qmake-LAB2-Desktop-Debug/.qtc_clangd",
-    "file": "/home/ivan/POtesting/LAB2/lab7/text/text.h"
+    "file": "/home/ivan/POtesting/LAB2/lab7/text.h"
 },
 {
     "arguments": [
@@ -1135,10 +1135,10 @@
         "-Wno-unknown-pragmas",
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
-        "/home/ivan/POtesting/LAB2/lab7/text/_text.h"
+        "/home/ivan/POtesting/LAB2/lab7/_text.h"
     ],
     "directory": "/home/ivan/POtesting/LAB2/build-qmake-LAB2-Desktop-Debug/.qtc_clangd",
-    "file": "/home/ivan/POtesting/LAB2/lab7/text/_text.h"
+    "file": "/home/ivan/POtesting/LAB2/lab7/_text.h"
 },
 {
     "arguments": [
@@ -1622,10 +1622,10 @@
         "-Wno-unknown-pragmas",
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
-        "/home/ivan/POtesting/LAB2/lab7/text/process_forward.c"
+        "/home/ivan/POtesting/LAB2/lab7/process_forward.c"
     ],
     "directory": "/home/ivan/POtesting/LAB2/build-qmake-LAB2-Desktop-Debug/.qtc_clangd",
-    "file": "/home/ivan/POtesting/LAB2/lab7/text/process_forward.c"
+    "file": "/home/ivan/POtesting/LAB2/lab7/process_forward.c"
 },
 {
     "arguments": [
@@ -1682,10 +1682,10 @@
         "-Wno-unknown-pragmas",
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
-        "/home/ivan/POtesting/LAB2/lab7/text/append_line.c"
+        "/home/ivan/POtesting/LAB2/lab7/append_line.c"
     ],
     "directory": "/home/ivan/POtesting/LAB2/build-qmake-LAB2-Desktop-Debug/.qtc_clangd",
-    "file": "/home/ivan/POtesting/LAB2/lab7/text/append_line.c"
+    "file": "/home/ivan/POtesting/LAB2/lab7/append_line.c"
 },
 {
     "arguments": [
@@ -1742,10 +1742,10 @@
         "-Wno-unknown-pragmas",
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
-        "/home/ivan/POtesting/LAB2/lab7/text/create_text.c"
+        "/home/ivan/POtesting/LAB2/lab7/create_text.c"
     ],
     "directory": "/home/ivan/POtesting/LAB2/build-qmake-LAB2-Desktop-Debug/.qtc_clangd",
-    "file": "/home/ivan/POtesting/LAB2/lab7/text/create_text.c"
+    "file": "/home/ivan/POtesting/LAB2/lab7/create_text.c"
 },
 {
     "arguments": [
@@ -1802,10 +1802,10 @@
         "-Wno-unknown-pragmas",
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
-        "/home/ivan/POtesting/LAB2/lab7/text/remove_all.c"
+        "/home/ivan/POtesting/LAB2/lab7/remove_all.c"
     ],
     "directory": "/home/ivan/POtesting/LAB2/build-qmake-LAB2-Desktop-Debug/.qtc_clangd",
-    "file": "/home/ivan/POtesting/LAB2/lab7/text/remove_all.c"
+    "file": "/home/ivan/POtesting/LAB2/lab7/remove_all.c"
 },
 {
     "arguments": [
@@ -1982,10 +1982,10 @@
         "-Wno-unknown-pragmas",
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
-        "/home/ivan/POtesting/LAB2/lab7/text/text.h"
+        "/home/ivan/POtesting/LAB2/lab7/text.h"
     ],
     "directory": "/home/ivan/POtesting/LAB2/build-qmake-LAB2-Desktop-Debug/.qtc_clangd",
-    "file": "/home/ivan/POtesting/LAB2/lab7/text/text.h"
+    "file": "/home/ivan/POtesting/LAB2/lab7/text.h"
 },
 {
     "arguments": [
@@ -2042,10 +2042,10 @@
         "-Wno-unknown-pragmas",
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
-        "/home/ivan/POtesting/LAB2/lab7/text/_text.h"
+        "/home/ivan/POtesting/LAB2/lab7/_text.h"
     ],
     "directory": "/home/ivan/POtesting/LAB2/build-qmake-LAB2-Desktop-Debug/.qtc_clangd",
-    "file": "/home/ivan/POtesting/LAB2/lab7/text/_text.h"
+    "file": "/home/ivan/POtesting/LAB2/lab7/_text.h"
 },
 {
     "arguments": [

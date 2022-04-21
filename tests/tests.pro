@@ -18,8 +18,8 @@ DEFINES += INPUTDIR=\\\"$$PWD/input/\\\"
 
 HEADERS += tests.h \
         ../lab7/common.h \
-        ../lab7/text/text.h \
-        ../lab7/text/_text.h \
+        ../lab7/text.h \
+        ../lab7/_text.h \
         tests_out.h
 
 SOURCES += main.cpp \
@@ -29,10 +29,10 @@ SOURCES += main.cpp \
     ../lab7/mplb.c \
     ../lab7/prev_paste.c \
     ../lab7/save.c \
-    ../lab7/text/process_forward.c \
-    ../lab7/text/append_line.c \
-    ../lab7/text/create_text.c \
-    ../lab7/text/remove_all.c
+    ../lab7/process_forward.c \
+    ../lab7/append_line.c \
+    ../lab7/create_text.c \
+    ../lab7/remove_all.c
 
 
 INCLUDEPATH += ../lab7
