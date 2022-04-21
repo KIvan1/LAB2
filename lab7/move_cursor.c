@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "common.h"
-#include "text/_text.h"
-#include "text/text.h"
+#include "_text.h"
+#include "text.h"
 
 void move_cursor(text txt, int line, int pos)
 {

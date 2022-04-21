@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "common.h"
-#include "text/text.h"
-#include "text/_text.h"
+#include "text.h"
+#include "_text.h"
 
 void mplb(text txt)
 {

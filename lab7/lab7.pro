@@ -18,8 +18,8 @@ SOURCES += editor.c \
 
 HEADERS += \
     common.h \
-    text/_text.h \
-    text/text.h
+    _text.h \
+    text.h
 
 
 QMAKE_CFLAGS += -Wall -Wextra #-Werror

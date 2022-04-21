@@ -11,8 +11,8 @@
 #include <string.h>
 #include <stdlib.h>
 #include "common.h"
-#include "text/text.h"
-#include "text/_text.h"
+#include "text.h"
+#include "_text.h"
 
 
 static void show_line(int index, char *contents, int cursor, void *data);
