@@ -13,7 +13,7 @@ extern "C"{
 #include "common.h"
 }
 
-TEST(cursor_pos, sute1)
+TEST(move_cursor, sute1)
 {
     text txt = create_text();
     load(txt, filename);
@@ -30,7 +30,7 @@ TEST(cursor_pos, sute1)
     remove_all(txt);
 }
 
-TEST(cursor_pos, sute2)
+TEST(move_cursor, sute2)
 {
     text txt = create_text();
     load(txt, filename);
@@ -47,7 +47,7 @@ TEST(cursor_pos, sute2)
     remove_all(txt);
 }
 
-TEST(cursor_pos, sute3)
+TEST(move_cursor, sute3)
 {
     text txt = create_text();
     load(txt, filename);
@@ -64,11 +64,11 @@ TEST(cursor_pos, sute3)
     remove_all(txt);
 }
 
-TEST(cursor_pos, sute4)
+TEST(move_cursor, sute4)
 {
     text txt = create_text();
     load(txt, filename);
-    move_cursor(txt, 15, -5);
+    move_cursor(txt, 2, -5);
     EXPECT_EQ(txt->cursor->position, 0);
     int k = 1;
     node *current = txt->begin;
@@ -77,7 +77,24 @@ TEST(cursor_pos, sute4)
         k++;
         current = current->next;
     }
-    EXPECT_EQ(k, txt->length);
+    EXPECT_EQ(k, 2);
+    remove_all(txt);
+}
+
+TEST(move_cursor, sute5)
+{
+    text txt = create_text();
+    load(txt, filename);
+    move_cursor(txt, 2, 30);
+    EXPECT_EQ(txt->cursor->position, 30);
+    int k = 1;
+    node *current = txt->begin;
+    while(current != txt->cursor->line)
+    {
+        k++;
+        current = current->next;
+    }
+    EXPECT_EQ(k, 2);
     remove_all(txt);
 }
 

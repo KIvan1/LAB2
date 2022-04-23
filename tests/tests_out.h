@@ -13,11 +13,18 @@ extern "C"{
 #include "common.h"
 }
 
+TEST(move_cursor, sute6)
+{
+    text txt = create_text();
+    testing::internal::CaptureStderr();
+    move_cursor(txt, 2, 3);
+    std::string output = testing::internal::GetCapturedStderr();
+    EXPECT_EQ(output, "There are already no any lines in the text!\n");
+    remove_all(txt);
+}
 TEST(mplb, sute3)
 {
     text txt = create_text();
-    txt->cursor->line = txt->begin;
-    node *prev = txt->cursor->line;
     testing::internal::CaptureStderr();
     mplb(txt);
     std::string output = testing::internal::GetCapturedStderr();
@@ -79,7 +86,7 @@ TEST(show, suite1)
             EXPECT_EQ(output[i], current->contents[j]);
             i++;
         }
-        if (output[i] == '\n')
+        if (current != txt->end)
             i++;
         current = current->next;
     }
@@ -110,10 +117,20 @@ TEST(show, suite2)
             EXPECT_EQ(output[i], current->contents[j]);
             i++;
         }
-        if (output[i] == '\n')
-            i++;
+        i++;
         current = current->next;
     }
+    remove_all(txt);
+}
+
+TEST(show, suite3)
+{
+    text txt = create_text();
+    testing::internal::CaptureStderr();
+    show(txt);
+    std::string output = testing::internal::GetCapturedStderr();
+    EXPECT_EQ(output, "There are already no any lines in the text!\n");
+
     remove_all(txt);
 }
 
