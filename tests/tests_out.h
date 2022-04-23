@@ -121,10 +121,10 @@ TEST(showevenbeforodd, suite1)
     std::ifstream f;
     f.open("input/test_sweb.txt");
     std::string s;
-    std::string cur_s;
     int i = 0;
-    while(f >> s)
+    while(std::getline(f, s))
     {
+        std::string cur_s;
         while(output[i] != '\n')
         {
             cur_s += output[i];
