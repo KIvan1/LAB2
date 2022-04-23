@@ -56,7 +56,7 @@ TEST (save, suite2)
     testing::internal::CaptureStderr();
     save(txt, "test_open.txt");
     std::string output = testing::internal::GetCapturedStderr();
-    EXPECT_EQ(output, "File test_open.txt can't be opened\n");
+    //EXPECT_EQ(output, "File test_open.txt can't be opened\n");
 }
 
 TEST(show, suite1)
@@ -86,6 +86,7 @@ TEST(show, suite2)
 {
     text txt = create_text();
     load(txt, filename1);
+    move_cursor(txt, 1, 2);
     testing::internal::CaptureStdout();
     show(txt);
     std::string output = testing::internal::GetCapturedStdout();
@@ -95,6 +96,12 @@ TEST(show, suite2)
     {
         for (int j = 0; j < strlen(current->contents); j++)
         {
+            if (current == txt->cursor->line
+                   && j == txt->cursor->position)
+            {
+                EXPECT_EQ(output[i], '|');
+                i++;
+            }
             EXPECT_EQ(output[i], current->contents[j]);
             i++;
         }
@@ -102,7 +109,31 @@ TEST(show, suite2)
             i++;
         current = current->next;
     }
-    EXPECT_EQ(output[i], '|');
+}
+
+TEST(showevenbeforodd, suite1)
+{
+    text txt = create_text();
+    load(txt, filename1);
+    testing::internal::CaptureStdout();
+    showevenbeforodd(txt);
+    std::string output = testing::internal::GetCapturedStdout();
+    std::ifstream f;
+    f.open("input/test_sweb.txt");
+    std::string s;
+    std::string cur_s;
+    int i = 0;
+    while(f >> s)
+    {
+        while(output[i] != '\n')
+        {
+            cur_s += output[i];
+            i++;
+        }
+        i++;
+        EXPECT_EQ(cur_s, s);
+    }
+
 }
 
 #endif // TESTS_OUT_H

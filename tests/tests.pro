@@ -39,4 +39,5 @@ INCLUDEPATH += ../lab7
 
 DISTFILES += \
     input/input.txt \
-    input/test_open.txt
+    input/test_open.txt \
+    input/test_sweb.txt
