@@ -167,4 +167,14 @@ TEST(showevenbeforodd, suite2)
     remove_all(txt);
 }
 
+TEST(showevenbeforodd, suite3)
+{
+    text txt = create_text();
+    testing::internal::CaptureStderr();
+    showevenbeforodd(txt);
+    std::string output = testing::internal::GetCapturedStderr();
+    EXPECT_EQ(output, "There are already no any lines in the text!\n");
+    remove_all(txt);
+}
+
 #endif // TESTS_OUT_H
