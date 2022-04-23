@@ -4,3 +4,4 @@ Makefile
 *.o
 *.gcda
 *.gcno
+test_open.txt
