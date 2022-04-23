@@ -21,6 +21,13 @@ HEADERS += \
     _text.h \
     text.h
 
+DISTFILES += \
+    input/input.txt \
+    input/test_open.txt \
+    input/test_sweb.txt \
+    input/input_odd.txt \
+    input/test_sweb_odd.txt
+
 
 QMAKE_CFLAGS += -Wall -Wextra #-Werror
 

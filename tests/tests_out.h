@@ -136,4 +136,29 @@ TEST(showevenbeforodd, suite1)
 
 }
 
+
+TEST(showevenbeforodd, suite2)
+{
+    text txt = create_text();
+    load(txt, "input/input_odd.txt");
+    testing::internal::CaptureStdout();
+    showevenbeforodd(txt);
+    std::string output = testing::internal::GetCapturedStdout();
+    std::ifstream f;
+    f.open("input/test_sweb_odd.txt");
+    std::string s;
+    int i = 0;
+    while(std::getline(f, s))
+    {
+        std::string cur_s;
+        while(output[i] != '\n')
+        {
+            cur_s += output[i];
+            i++;
+        }
+        i++;
+        EXPECT_EQ(cur_s, s);
+    }
+}
+
 #endif // TESTS_OUT_H
