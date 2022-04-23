@@ -54,9 +54,9 @@ TEST (save, suite2)
     text txt = create_text();
     load(txt, filename1);
     testing::internal::CaptureStderr();
-    save(txt, "test_open.txt");
+    save(txt, "input/test_open.txt");
     std::string output = testing::internal::GetCapturedStderr();
-    //EXPECT_EQ(output, "File test_open.txt can't be opened\n");
+    EXPECT_EQ(output, "File input/test_open.txt can't be opened\n");
 }
 
 TEST(show, suite1)
