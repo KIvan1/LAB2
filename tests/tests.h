@@ -28,7 +28,6 @@ TEST(cursor_pos, sute1)
     }
     EXPECT_EQ(k, 2);
     remove_all(txt);
-    move_cursor(txt, 2, 3);
 }
 
 TEST(cursor_pos, sute2)
@@ -46,7 +45,6 @@ TEST(cursor_pos, sute2)
     }
     EXPECT_EQ(k, 1);
     remove_all(txt);
-    move_cursor(txt, 2, 3);
 }
 
 TEST(cursor_pos, sute3)
@@ -64,7 +62,23 @@ TEST(cursor_pos, sute3)
     }
     EXPECT_EQ(k, txt->length);
     remove_all(txt);
-    move_cursor(txt, 2, 3);
+}
+
+TEST(cursor_pos, sute4)
+{
+    text txt = create_text();
+    load(txt, filename);
+    move_cursor(txt, 15, -5);
+    EXPECT_EQ(txt->cursor->position, 0);
+    int k = 1;
+    node *current = txt->begin;
+    while(current != txt->cursor->line)
+    {
+        k++;
+        current = current->next;
+    }
+    EXPECT_EQ(k, txt->length);
+    remove_all(txt);
 }
 
 TEST(mplb, sute1)
@@ -75,6 +89,7 @@ TEST(mplb, sute1)
     mplb(txt);
     EXPECT_EQ(txt->cursor->position, 0);
     EXPECT_EQ(txt->cursor->line, prev->previous);
+    remove_all(txt);
 }
 
 TEST(mplb, sute2)
@@ -86,6 +101,7 @@ TEST(mplb, sute2)
     mplb(txt);
     EXPECT_EQ(txt->cursor->position, 0);
     EXPECT_EQ(txt->cursor->line, prev);
+    remove_all(txt);
 }
 
 TEST(prev_paste, suite2)
@@ -96,6 +112,7 @@ TEST(prev_paste, suite2)
     prev_paste(txt, "test");
     EXPECT_EQ(txt->length - 1, prevSize);
     EXPECT_STREQ(txt->cursor->line->previous->contents, "test");
+    remove_all(txt);
 }
 
 TEST(prev_paste, suite3)
@@ -107,6 +124,7 @@ TEST(prev_paste, suite3)
     prev_paste(txt, "test");
     EXPECT_EQ(txt->length - 1, prevSize);
     EXPECT_STREQ(txt->begin->contents, "test");
+    remove_all(txt);
 }
 
 TEST(save, suite3)
@@ -127,6 +145,7 @@ TEST(save, suite3)
     EXPECT_TRUE(std::getline(f, s) || std::getline(cur_f, cur_s));
     f.close();
     cur_f.close();
+    remove_all(txt);
 }
 
 #endif // EQTEST_H
