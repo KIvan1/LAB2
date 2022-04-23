@@ -27,6 +27,7 @@ void save(text txt, char *filename)
 	{
         fprintf(f, "%s\n", current->contents);
 		current = current->next;
-	} while(current);
+    } while(current);
+
     close(f);
 }
