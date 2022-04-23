@@ -24,7 +24,7 @@ TEST(mplb, sute3)
     EXPECT_EQ(output, "There are already no any lines in the text!\n");
 }
 
-//TEST(prev_paste, suite1)
+/*TEST(prev_paste, suite1)
 //{
 //    text txt = create_text();
 //    load(txt, filename1);
@@ -38,7 +38,7 @@ TEST(mplb, sute3)
 //    std::string output = testing::internal::GetCapturedStderr();
 //    std::cout << output << std::endl;
 //    EXPECT_EQ(output, "Too long line!\n");
-//}
+//}*/
 
 TEST (save, suite1)
 {
@@ -56,7 +56,30 @@ TEST (save, suite2)
     testing::internal::CaptureStderr();
     save(txt, "test_open.txt");
     std::string output = testing::internal::GetCapturedStderr();
-    //EXPECT_EQ(output, "File test_open.txt can't be opened\n");
+    EXPECT_EQ(output, "File test_open.txt can't be opened\n");
+}
+
+TEST(show, suite1)
+{
+    text txt = create_text();
+    load(txt, filename1);
+    testing::internal::CaptureStdout();
+    show(txt);
+    std::string output = testing::internal::GetCapturedStdout();
+    int i = 0;
+    node *current = txt->begin;
+    while(current)
+    {
+        for (int j = 0; j < strlen(current->contents); j++)
+        {
+            EXPECT_EQ(output[i], current->contents[j]);
+            i++;
+        }
+        if (output[i] == '\n')
+            i++;
+        current = current->next;
+    }
+    EXPECT_EQ(output[i], '|');
 }
 
 #endif // TESTS_OUT_H

@@ -129,9 +129,4 @@ TEST(save, suite3)
     cur_f.close();
 }
 
-TEST(show, suite1)
-{
-
-}
-
 #endif // EQTEST_H
