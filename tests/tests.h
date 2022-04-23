@@ -125,6 +125,13 @@ TEST(save, suite3)
         EXPECT_EQ(s, cur_s);
     }
     EXPECT_TRUE(std::getline(f, s) || std::getline(cur_f, cur_s));
+    f.close();
+    cur_f.close();
+}
+
+TEST(show, suite1)
+{
+
 }
 
 #endif // EQTEST_H
