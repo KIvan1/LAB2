@@ -25,21 +25,22 @@ TEST(mplb, sute3)
     remove_all(txt);
 }
 
-/*TEST(prev_paste, suite1)
-//{
-//    text txt = create_text();
-//    load(txt, filename1);
-//    char *s;
-//    for (int i = 0; i < MAXLINE + 1; i++)
-//    {
-//        strcat(s, "t");
-//    }
-//    testing::internal::CaptureStderr();
-//    prev_paste(txt, s);
-//    std::string output = testing::internal::GetCapturedStderr();
-//    std::cout << output << std::endl;
-//    EXPECT_EQ(output, "Too long line!\n");
-//}*/
+TEST(prev_paste, suite1)
+{
+    text txt = create_text();
+    load(txt, filename1);
+    char *s;
+    s = (char*)malloc(sizeof(char) * 256);
+    for (int i = 0; i < MAXLINE + 1; i++)
+    {
+        s[i] = 't';
+    }
+    s[256] = '\0';
+    testing::internal::CaptureStderr();
+    prev_paste(txt, s);
+    std::string output = testing::internal::GetCapturedStderr();
+    EXPECT_EQ(output, "Too long line!\n");
+}
 
 TEST (save, suite1)
 {
