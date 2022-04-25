@@ -13,6 +13,15 @@ extern "C"{
 #include "common.h"
 }
 
+TEST(load, suite2)
+{
+    text txt = create_text();
+    testing::internal::CaptureStdout();
+    load(txt, "exist.txt");
+    std::string output = testing::internal::GetCapturedStdout();
+    EXPECT_EQ(output, "The file exist.txt cannot be opened\n");
+}
+
 TEST(move_cursor, sute6)
 {
     text txt = create_text();

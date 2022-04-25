@@ -13,6 +13,22 @@ extern "C"{
 #include "common.h"
 }
 
+TEST(load, suite1)
+{
+    text txt = create_text();
+    load(txt, filename);
+    std::ifstream f;
+    std::string s;
+    node *current = txt->begin;
+    EXPECT_NE(txt->begin, nullptr);
+    EXPECT_NE(txt->end, nullptr);
+    while (std::getline(f, s))
+    {
+        EXPECT_EQ(current->contents, s);
+        current = current->next;
+    }
+}
+
 TEST(move_cursor, sute1)
 {
     text txt = create_text();
