@@ -12,7 +12,7 @@ void prev_paste(text txt, const char *str_for_input)
 
     if ((nd = (node *) malloc(sizeof(node))) == NULL) {
         fprintf(stderr, "Not enough memory!\n");
-        return;
+        exit(EXIT_FAILURE);
     }
 
     if (strlen(str_for_input) > MAXLINE) {
