@@ -216,6 +216,7 @@ TEST(showevenbeforodd, suite4)
     std::string s;
     s[s.length()-1]='\0';
     s += '|';
+    output[output.length()-1] = '\0';
     std::getline(f, s);
     EXPECT_EQ(output, s);
     remove_all(txt);
