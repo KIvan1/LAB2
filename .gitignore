@@ -5,3 +5,4 @@ Makefile
 *.gcda
 *.gcno
 input/test_open.txt
+build-qmake-LAB2-Desktop-Debug

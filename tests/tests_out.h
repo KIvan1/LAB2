@@ -214,18 +214,10 @@ TEST(showevenbeforodd, suite4)
     std::ifstream f;
     f.open("one_line.txt");
     std::string s;
-    int i = 0;
-    while(std::getline(f, s))
-    {
-        std::string cur_s;
-        while(output[i] != '\n')
-        {
-            cur_s += output[i];
-            i++;
-        }
-        i++;
-        EXPECT_EQ(cur_s, s);
-    }
+    s[s.length()-1]='\0';
+    s += '|';
+    std::getline(f, s);
+    EXPECT_EQ(output, s);
     remove_all(txt);
 }
 
