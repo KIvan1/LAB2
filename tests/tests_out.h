@@ -151,7 +151,7 @@ TEST(showevenbeforodd, suite1)
     showevenbeforodd(txt);
     std::string output = testing::internal::GetCapturedStdout();
     std::ifstream f;
-    f.open("input/test_sweb.txt");
+    f.open("test_sweb.txt");
     std::string s;
     int i = 0;
     while(std::getline(f, s))
@@ -172,12 +172,12 @@ TEST(showevenbeforodd, suite1)
 TEST(showevenbeforodd, suite2)
 {
     text txt = create_text();
-    load(txt, "input/input_odd.txt");
+    load(txt, "input_odd.txt");
     testing::internal::CaptureStdout();
     showevenbeforodd(txt);
     std::string output = testing::internal::GetCapturedStdout();
     std::ifstream f;
-    f.open("input/test_sweb_odd.txt");
+    f.open("test_sweb_odd.txt");
     std::string s;
     int i = 0;
     while(std::getline(f, s))
@@ -214,10 +214,9 @@ TEST(showevenbeforodd, suite4)
     std::ifstream f;
     f.open("one_line.txt");
     std::string s;
-    s[s.length()-1]='\0';
-    s += '|';
-    output[output.length()-1] = '\0';
     std::getline(f, s);
+    s += "|";
+    output.pop_back();
     EXPECT_EQ(output, s);
     remove_all(txt);
 }
