@@ -204,4 +204,29 @@ TEST(showevenbeforodd, suite3)
     remove_all(txt);
 }
 
+TEST(showevenbeforodd, suite4)
+{
+    text txt = create_text();
+    load(txt, "one_line.txt");
+    testing::internal::CaptureStdout();
+    showevenbeforodd(txt);
+    std::string output = testing::internal::GetCapturedStdout();
+    std::ifstream f;
+    f.open("one_line.txt");
+    std::string s;
+    int i = 0;
+    while(std::getline(f, s))
+    {
+        std::string cur_s;
+        while(output[i] != '\n')
+        {
+            cur_s += output[i];
+            i++;
+        }
+        i++;
+        EXPECT_EQ(cur_s, s);
+    }
+    remove_all(txt);
+}
+
 #endif // TESTS_OUT_H
