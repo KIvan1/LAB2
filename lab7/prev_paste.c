@@ -17,6 +17,7 @@ void prev_paste(text txt, const char *str_for_input)
 
     if (strlen(str_for_input) > MAXLINE) {
         fprintf(stderr, "Too long line!\n");
+        free(nd);
         return;
     }
 
